@@ -1,0 +1,14 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // フォーマッターをPrettierにする
+    "editor.formatOnSave": true, // ファイル保存時にフォーマットを実行
+    "[javascript]": {
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true
+    },
+    "go.goroot": "/Users/terashimashouhei/.anyenv/envs/goenv/versions/1.17.6", // これを例にいい感じに自分のところ設定
+    "go.gopath": "/Users/terashimashouhei/go/1.17.6", // これを例にいい感じに自分のところ設定
+    "[go]": {
+      "editor.defaultFormatter": "golang.go"
+    }
+  }
+  
