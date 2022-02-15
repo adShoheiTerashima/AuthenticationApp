@@ -4,14 +4,13 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    'plugin:import/recommended',
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'prettier',
-    'prettier/react',
-    'prettier/@typescript-eslint',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -57,6 +56,9 @@ module.exports = {
       node: {
         paths: ['src'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+      typescript: {
+        project: './tsconfig.json',
       },
     },
   },
