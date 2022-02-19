@@ -2517,7 +2517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11":
+"@emotion/react@npm:^11.7.1":
   version: 11.7.1
   resolution: "@emotion/react@npm:11.7.1"
   dependencies:
@@ -4799,7 +4799,7 @@ __metadata:
   resolution: "authentication-app@workspace:."
   dependencies:
     "@chakra-ui/react": ^1.8.3
-    "@emotion/react": ^11
+    "@emotion/react": ^11.7.1
     "@emotion/styled": ^11
     "@reduxjs/toolkit": ^1.7.2
     "@testing-library/jest-dom": ^5.16.2
