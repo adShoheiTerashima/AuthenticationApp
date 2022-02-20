@@ -1,4 +1,19 @@
-import { Box, Button, Center, Flex, IconButton, Input, InputGroup, InputLeftElement, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  HStack,
+  IconButton,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Link,
+  Spacer,
+  Stack,
+  Text,
+  VStack,
+} from '@chakra-ui/react'
 import { Facebook, Github, Google, Lock, Logo, Mail, Twitter } from '@components/icons'
 import { css } from '@emotion/react'
 const input = css({
@@ -6,63 +21,85 @@ const input = css({
 })
 export const Login = () => {
   return (
-    <Center h="100vh" color="black">
-      <Flex direction="column">
-        <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p="6">
-          <Logo width="131px" height="19px" className="fill-white" />
-          <Text>Join thousands of learners from around the world</Text>
-          <Text>Master web development by making real-life projects. There are multiple paths for you to choose</Text>
-          <InputGroup>
-            <InputLeftElement pointerEvents="none">
-              <Mail width="20px" height="20px" color={'red.500'} />
-            </InputLeftElement>
-            <Input type="tel" placeholder="Email" css={input} />
-          </InputGroup>
-          <InputGroup>
-            <InputLeftElement pointerEvents="none">
-              <Lock width="20px" height="20px" className="fill-white" />
-            </InputLeftElement>
-            <Input type="tel" placeholder="Password" css={input} />
-          </InputGroup>
-          <Button colorScheme="blue">Start coding now</Button>
-          <Text>or continue with these social profile</Text>
+    <Flex h="100vh" justify="center" w={472} m="auto" flexDirection="column" letterSpacing="-3.5%">
+      <Box borderWidth="1px" borderRadius="2xl" py="12" px="14" color="black.333">
+        <Logo width="131px" height="19px" className="fill-white" />
+        <Text mt={6} fontWeight="bold" w={312} fontSize="lg">
+          Join thousands of learners from around the world
+        </Text>
+        <Text mt={3.5}>
+          Master web development by making real-life projects. There are multiple paths for you to choose
+        </Text>
+        <InputGroup mt={9} borderColor="gray.BDBDBD">
+          <InputLeftElement pointerEvents="none">
+            <Mail width="20px" height="20px" color="gray.828282" />
+          </InputLeftElement>
+          <Input type="tel" placeholder="Email" css={input} _placeholder={{ color: 'gray.828282' }} />
+        </InputGroup>
+        <InputGroup mt={3.5} borderColor="gray.BDBDBD">
+          <InputLeftElement pointerEvents="none">
+            <Lock width="20px" height="20px" color="gray.828282" />
+          </InputLeftElement>
+          <Input type="tel" placeholder="Password" css={input} _placeholder={{ color: 'gray.828282' }} />
+        </InputGroup>
+        <Button backgroundColor="blue.2F80ED" mt={6} color="white" w="100%" borderRadius="lg">
+          Start coding now
+        </Button>
+        <Center>
+          <Text mt={2} fontSize="sm" color="gray.828282">
+            or continue with these social profile
+          </Text>
+        </Center>
+
+        <Center mt={6} gridGap={5}>
           <IconButton
             variant="outline"
-            colorScheme="teal"
+            borderColor="gray.828282"
             aria-label="Send email"
             isRound
-            icon={<Google color="red.500" />}
+            icon={<Google color="gray.828282" />}
           />
           <IconButton
             variant="outline"
-            colorScheme="teal"
+            borderColor="gray.828282"
             aria-label="Send email"
             isRound
-            icon={<Facebook color="red.500" />}
+            icon={<Facebook color="gray.828282" />}
           />
           <IconButton
             variant="outline"
-            colorScheme="teal"
+            borderColor="gray.828282"
             aria-label="Send email"
             isRound
-            icon={<Twitter color="red.500" />}
+            icon={<Twitter color="gray.828282" />}
           />
           <IconButton
             variant="outline"
-            colorScheme="teal"
+            borderColor="gray.828282"
             aria-label="Send email"
             isRound
-            icon={<Github color="red.500" />}
+            icon={<Github color="gray.828282" />}
           />
-          <Text>
-            Adready a member? <a>Login</a>
+        </Center>
+        <Center mt={6} fontSize="sm">
+          <Text color="gray.828282">Already a member?</Text>
+          <Link ml="1" color="blue.00E">
+            Login
+          </Link>
+        </Center>
+      </Box>
+      <Flex w="100%" mt="3" fontSize="sm" color="gray.828282">
+        <Box display="flex">
+          <Text>created by</Text>
+          <Text ml="1" textDecoration="underline" fontWeight="bold">
+            adShoheiTerashima
           </Text>
         </Box>
-        <Flex color="black">
-          <Text>created by adShoheiTerashima</Text>
+        <Spacer />
+        <Box>
           <Text>devChallenges.io</Text>
-        </Flex>
+        </Box>
       </Flex>
-    </Center>
+    </Flex>
   )
 }

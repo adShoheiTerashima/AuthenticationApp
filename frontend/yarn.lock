@@ -2620,6 +2620,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/noto-sans@npm:^4.5.4":
+  version: 4.5.4
+  resolution: "@fontsource/noto-sans@npm:4.5.4"
+  checksum: 28e3973d06d7534a2ef684088b9d8c8945ee45c2ccffc5531eaa86510f006111e9672df7fb0685f769ea65cb4ea625d81ef5cafb91db94612de9f111f84a83ec
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.0.1":
   version: 1.1.2
   resolution: "@gar/promisify@npm:1.1.2"
@@ -4801,6 +4808,7 @@ __metadata:
     "@chakra-ui/react": ^1.8.3
     "@emotion/react": ^11.7.1
     "@emotion/styled": ^11
+    "@fontsource/noto-sans": ^4.5.4
     "@reduxjs/toolkit": ^1.7.2
     "@testing-library/jest-dom": ^5.16.2
     "@testing-library/react": ^12.1.2
